@@ -54,7 +54,7 @@ public class Binary {
             }
         }
         byte[] ret = new byte[value.length() / 8];
-        for (int i = 1; i <= ret.length; i++) {
+        for (int i = 0; i < ret.length; i++) {
             String chunk = value.substring(i * 8, i * 8 + 8);
             ret[i] = (byte) Short.parseShort(chunk, 2);
         }

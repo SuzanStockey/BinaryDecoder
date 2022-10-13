@@ -19,6 +19,9 @@ public class Main {
             while (!"S".equalsIgnoreCase(continuar)) {
                 System.out.println("Deseja continuar?(S/N)");
                 continuar = in.next();
+                if ("N".equalsIgnoreCase(continuar)) {
+                    return;
+                }
             }
             System.out.println("Informe o valor em binário: ");
             Binary binario = new Binary();
