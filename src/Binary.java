@@ -15,9 +15,9 @@ public class Binary {
 
     public String valueDecimalNoSignal(){
         while(value.length() < bits){
-            value = "0" + value;
+            value = "0".concat(value);
         }
-        Double decimalNoSignal = 0.0;
+        double decimalNoSignal = 0.0;
         for (int i = 0; i < value.length(); i++){
             if("1".equalsIgnoreCase(String.valueOf(value.charAt(i)))) {
                 decimalNoSignal += Math.pow(2, (value.length() - 1 - i));
@@ -28,10 +28,10 @@ public class Binary {
 
     public String valueDecimal2Complement(){
         while(value.length() < bits){
-            value = "0" + value;
+            value = "0".concat(value);
         }
 
-        Double decimal2Complement = 0.0;
+        double decimal2Complement = 0.0;
         String sinal = "";
         for (int i = 0; i < value.length(); i++){
             if (i == 0){
@@ -50,7 +50,7 @@ public class Binary {
     public String character() {
         if (bits > value.length()){
             while(value.length() < bits){
-                value = "0" + value;
+                value = "0".concat(value);
             }
         }
         byte[] ret = new byte[value.length() / 8];

@@ -9,7 +9,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Locale.setDefault(Locale.ENGLISH);
         Scanner in = new Scanner(System.in);
 
