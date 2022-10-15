@@ -1,8 +1,8 @@
 /**
  * Programa que obtém um valor em binário e sua quantidade de bits, e retorna seu valor em decimal sem sinal, decimal em com7plemento de 2 e, caso tenha 8 bits ou menos, o caractere que representa no UTF-8
  *
- * @author Suzan Stockey Pereira
- * @version 13102022
+ * @author Suzan Stockey Pereira, Bruno Rosa Duarte e Carolina Brose
+ * @version 14102022
  */
 
 import java.util.Locale;
